@@ -1,21 +1,34 @@
-package com.example.practice;
-
-// City
+package 
+com.example.practice;
 public class Main {
     public static void main(String[] args) {
-        City bj = new City();
-        bj.name = "Beijing";
-        bj.latitude = 39.903;
-        bj.longitude = 116.401;
-        System.out.println(bj.name);
-        System.out.println("location: " + bj.latitude + ", " + bj.longitude);
+        Person ming = new Person();
+        ming.setName("小明");
+        ming.setAge(12);
+        System.out.println(ming.getAge());
     }
 }
 
-class City {
-    public String name;
-    public double latitude;
-    public double longitude;
+class Person {
+    private String name;
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    private int age;
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    
 }
-
